@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Сайт визитка</title>
+</head>
+
+<body class="site">
+    <header class="site__header" role="banner">
+        <div class="site-header__inner">
+            <h1 class="site-header__title">GREG KLASSEN</h1>
+        </div>
+    </header>
+    <main class="site__main" role="main">
+        <section id="about" class="site-section site-section--about" aria-labelledby="about-title">
+            <h2 id="about-title" class="site-section__title">ABOUT</h2>
+            <p class="site-section__text">
+                I am one man – I am not a company. I am a husband, a father and an artist. My wife and three little kids
+                are a source of inspiration and happiness. I’m also inspired by the beautiful world just outside my
+                door. I live in the Pacific Northwest and find inspiration in the trees, the rivers and the fields.
+                I create – I do not produce. I create because I love to. It’s so much fun and a pleasure to go to work.
+                My pieces are handmade, in the truest sense of the word. I make one piece at a time and give it my full
+                attention, starting with a tree and ending up with functional art. I love the idea of taking a discarded
+                tree and giving in new life. I think the natural world is beautiful, and I love what I do.
+            </p>
+        </section>
+        <div class="main__photo">
+            <img src="./image/Frame 35.svg" alt="Foto" class="main__photo-img">
+        </div>
+        <section id="products" class="site-section site-section--products" aria-labelledby="products-title">
+            <h2 id="products-title" class="site-section__title">PRODUCTS</h2>
+            <div class="site-products">
+                <button class="site-product" type="button" aria-label="Tables">TABLES</button>
+                <button class="site-product" type="button" aria-label="Chairs">CHAIRS</button>
+                <button class="site-product" type="button" aria-label="Chairs">BEDS</button>
+                <button class="site-product" type="button" aria-label="Wardrobes">WARDROBES</button>
+                <button class="site-product" type="button" aria-label="Panels">PANELS</button>
+                <button class="site-product" type="button" aria-label="Live Edges">LIVE EDGES</button>
+            </div>
+        </section>
+        <section id="contact" class="site-section site-section--contact" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="site-section__title">CONTACT WITH ME</h2>
+            <form class="site-form" action="#" method="post" autocomplete="on" aria-label="Contact form">
+                <div class="site-form__group">
+                    <input class="site-form__input" type="text" id="phone" name="phone"
+                        placeholder="Your phone number" />
+                    <input class="site-form__input" type="text" id="Email" name="Email" placeholder="Your Email" />
+                </div>
+                <div class="site-form__group">
+                    <label class="site-form__label" for="message"></label>
+                    <textarea class="site-form__textarea" id="message" name="message"
+                        placeholder="Write your message..."></textarea>
+                </div>
+                <button class="site-form__submit" type="submit" aria-label="Send message">SEND A MESSAGE</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
