@@ -30,7 +30,8 @@ body {
 
 body {
     background: url(./image/fon.svg);
-    margin: 0;
+    background-repeat: no-repeat;
+    padding: 70px 0 0px 119px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,39 +41,31 @@ body {
 
 .site__header {
     width: 100%;
-    padding: 40px;
-    margin: 50px;
 }
 
 .site-header__title {
-    font-size: 4rem;
-    margin: 90px;
+    font-size: 9rem;
 }
 
 .site__main {
     width: 100%;
-    display: block;
-    padding: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.main__photo {
-    position: relative;
-    top: -550px;
-    left: 350px;
-    display: flex;
-    flex-direction: row-reverse;
+.main__photo-img {
+    width: 510px;
 }
+
 
 .site-section {
-    max-width: 1100px;
-    margin: 28px auto;
-    padding: 0 20px;
+    max-width: 1000px;
+    padding: 35px;
 }
 
 .site-section__title {
     font-size: 1.8rem;
-    margin-bottom: 12px;
-    color: #fff;
+    padding: 10px;
 }
 
 .site-section--about .site-section__text,
@@ -88,18 +81,19 @@ body {
 }
 
 .site-products {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
     align-items: stretch;
 }
 
 .site-product {
+    padding: 15px;
     text-align: left;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 14px;
     background: transparent;
     color: white;
     border-radius: 8px;
@@ -107,6 +101,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+
 }
 
 .site-product:hover {
@@ -128,7 +123,7 @@ body {
 
 .site-form__group {
     display: grid;
-    gap: 6px;
+    gap: 20px;
 }
 
 .site-form__label {
@@ -139,7 +134,6 @@ body {
 .site-form__input,
 .site-form__textarea {
     width: 100%;
-    padding: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.95);
@@ -152,11 +146,10 @@ body {
 
 .site-form__submit {
     justify-self: start;
-    padding: 12px 20px;
     border-radius: 6px;
     background: #2b2b2b;
     color: #fff;
-    border: 1px solid white;
+    border: 16px solid black;
     cursor: pointer;
 }
 
@@ -164,25 +157,25 @@ body {
     background: #3a3a3a;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1920px) {
     .site-products {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     .site-products {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 700px) {
-    .site-products {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media (max-width: 540px) {
+    .site__main {
+        flex-direction: column;
+    }
+
+
     .site-header__title {
         font-size: 2rem;
         letter-spacing: 0.15em;
@@ -192,7 +185,4 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .site-section {
-        margin: 20px auto;
-    }
 }
